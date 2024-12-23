@@ -1,0 +1,36 @@
+.sidebar {
+    width: 4rem;
+    background-color: white;
+    border-right: 1px solid #e5e7eb;
+  }
+  
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  
+  .sidebarIcon {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .sidebarIcon.active {
+    color: #2563eb;
+  }
+  
+  .sidebarIcon.active:hover {
+    background-color: #eff6ff;
+  }
+  
+  .sidebarIcon:not(.active) {
+    color: #4b5563;
+  }
+  
+  .sidebarIcon:not(.active):hover {
+    background-color: #f9fafb;
+  }
+  
