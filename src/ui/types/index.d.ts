@@ -22,3 +22,5 @@ export interface ResultsSectionProps {
 export interface TokenProps {
     text: string;
 }
+
+

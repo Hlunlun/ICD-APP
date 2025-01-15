@@ -4,12 +4,17 @@ import { InputSectionProps } from '../types/index';
 import Button from './Button';
 import SearchBar from './SearchBar';
 
+
+
+
+
 const InputSection: React.FC<InputSectionProps> = ({
   inputText,
   setInputText,
   onTokenize,
   onClear
 }) => {
+  
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(e.target.value);
   };
@@ -17,8 +22,7 @@ const InputSection: React.FC<InputSectionProps> = ({
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2 className={styles.title}>Input sentence to be segmented below</h2>
-        <SearchBar />
+        <h2 className={styles.title}>輸入需要斷詞通報資料</h2>
       </div>
 
       <div className={styles.inputBox}>
@@ -26,7 +30,7 @@ const InputSection: React.FC<InputSectionProps> = ({
           value={inputText}
           onChange={handleInputChange}
           className={styles.textarea}
-          placeholder="Enter Chinese text here..."
+          placeholder="請在此處輸入"
         />
         
         <div className={styles.buttonGroup}>
@@ -37,5 +41,6 @@ const InputSection: React.FC<InputSectionProps> = ({
     </div>
   );
 };
+
 
 export default InputSection;

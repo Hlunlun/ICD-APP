@@ -17,7 +17,7 @@
     "baseUrl": "src",
     "composite": true
   },
-  "include": ["src"],
+  "include": ["src/*"],
   "exclude": ["src/electron"],
   "references": [
     { "path": "./tsconfig.app.json" },

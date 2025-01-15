@@ -1,31 +1,34 @@
 .container {
-    margin-top: 2rem;
-  }
-  
-  .title {
-    font-size: 1.25rem;
-    color: #374151;
-    margin-bottom: 1rem;
-  }
-  
-  .resultsBox {
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    min-height: 200px;
-  }
-  
-  .tokenContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .token {
-    padding: 0.25rem 0.75rem;
-    background-color: #eff6ff;
-    color: #1d4ed8;
-    border-radius: 0.5rem;
-  }
+  --main-color-card: #e9faff;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: var(--main-color-card);
+}
+
+.title {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.resultsBox {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  min-height: 200px;
+}
+
+.tokenContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.token {
+  padding: 0.25rem 0.75rem;
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 0.5rem;
+}
   
